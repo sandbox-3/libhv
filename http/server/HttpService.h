@@ -249,6 +249,7 @@ struct HV_EXPORT HttpService {
         Handle("PUT", relativePath, handlerFunc);
         Handle("DELETE", relativePath, handlerFunc);
         Handle("PATCH", relativePath, handlerFunc);
+    	Handle("OPTIONS", relativePath, handlerFunc);
     }
     void Any(const char* relativePath, http_async_handler handlerFunc) {
         Handle("HEAD", relativePath, handlerFunc);
@@ -257,6 +258,7 @@ struct HV_EXPORT HttpService {
         Handle("PUT", relativePath, handlerFunc);
         Handle("DELETE", relativePath, handlerFunc);
         Handle("PATCH", relativePath, handlerFunc);
+	Handle("OPTIONS", relativePath, handlerFunc);
     }
     void Any(const char* relativePath, http_ctx_handler handlerFunc) {
         Handle("HEAD", relativePath, handlerFunc);
@@ -265,6 +267,7 @@ struct HV_EXPORT HttpService {
         Handle("PUT", relativePath, handlerFunc);
         Handle("DELETE", relativePath, handlerFunc);
         Handle("PATCH", relativePath, handlerFunc);
+	Handle("OPTIONS", relativePath, handlerFunc);
     }
 };
 
